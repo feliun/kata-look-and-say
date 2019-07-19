@@ -8,7 +8,7 @@ describe("Look and say sequence", () => {
     expect(lookandsay.next).to.be.a("function");
   });
 
-  it("returns 11 from 1", () => {
+  it.only("returns 11 from 1", () => {
     const lookandsay = initLookandsay();
     lookandsay.next();
     expect(lookandsay.getResult()).to.equal(11);
