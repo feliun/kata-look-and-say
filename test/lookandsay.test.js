@@ -8,9 +8,16 @@ describe("Look and say sequence", () => {
     expect(lookandsay.next).to.be.a("function");
   });
 
-  it.only("returns 11 from 1", () => {
+  it("returns 11 from 1", () => {
     const lookandsay = initLookandsay();
     lookandsay.next();
     expect(lookandsay.getResult()).to.equal(11);
+  });
+
+  it("returns 21 from 1, 11", () => {
+    const lookandsay = initLookandsay();
+    lookandsay.next();
+    lookandsay.next();
+    expect(lookandsay.getResult()).to.equal(21);
   });
 });
