@@ -38,4 +38,16 @@ describe("Look and say sequence", () => {
     lookandsay.next();
     expect(lookandsay.getResult()).to.equal(111221);
   });
+
+  it("returns next for any given number", () => {
+    const anotherLookandsay = initLookandsay(13112221);
+    anotherLookandsay.next();
+    expect(anotherLookandsay.getResult()).to.equal(1113213211);
+  });
+
+  it("returns next for any given number out of sequence", () => {
+    const anotherLookandsay = initLookandsay(333322555);
+    anotherLookandsay.next();
+    expect(anotherLookandsay.getResult()).to.equal(432235);
+  });
 });
