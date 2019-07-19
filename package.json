@@ -1,0 +1,23 @@
+{
+  "name": "kata-look-and-say",
+  "version": "1.0.0",
+  "description": "Look and say kata: https://en.wikipedia.org/wiki/Look-and-say_sequence",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliun/kata-look-and-say.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feliun/kata-look-and-say/issues"
+  },
+  "homepage": "https://github.com/feliun/kata-look-and-say#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
