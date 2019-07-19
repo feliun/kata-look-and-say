@@ -20,4 +20,21 @@ describe("Look and say sequence", () => {
     lookandsay.next();
     expect(lookandsay.getResult()).to.equal(21);
   });
+
+  it("returns 1211 from 1, 11, 21", () => {
+    const lookandsay = initLookandsay();
+    lookandsay.next();
+    lookandsay.next();
+    lookandsay.next();
+    expect(lookandsay.getResult()).to.equal(1211);
+  });
+
+  it("returns 111221 from 1, 11, 21, 1211", () => {
+    const lookandsay = initLookandsay();
+    lookandsay.next();
+    lookandsay.next();
+    lookandsay.next();
+    lookandsay.next();
+    expect(lookandsay.getResult()).to.equal(111221);
+  });
 });
