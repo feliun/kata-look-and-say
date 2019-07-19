@@ -13,12 +13,7 @@ module.exports = (initialValue = 1) => {
         total.push([digit])
       } else {
         const lastFamily = total[total.length - 1];
-        if (lastFamily.includes(digit)) {
-          lastFamily.push(digit);
-        } else {
-          const family = [digit];
-          total.push(family);
-        }
+        lastFamily.includes(digit) ? lastFamily.push(digit) : total.push([ digit ]);
       }
       return total;
     }, []);
